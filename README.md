@@ -9,4 +9,5 @@ I undertake these projects because I want to further enhance my skills to become
 
 ## Expanding Cards
 1. Date: Friday, October 20, 2023
-2. About project
+2. Project Demo:
+![...](https:)

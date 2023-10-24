@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 body{
+    background-color: #d6cadd;
     font-family: 'Poppins';
     display: flex;
     align-items: center;
