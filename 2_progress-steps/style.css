@@ -3,7 +3,6 @@
 :root{
     --line-border-fill: #6a0dad;
     --line-border-empty: #9370db;
-    /* --line-border-empty: #d6cadd; */
 }
 
 *{
@@ -11,7 +10,7 @@
 }
 
 body{
-    background-color: #d6cadd;
+    background-color: #301934;
     font-family: 'Poppins';
     display: flex;
     align-items: center;
