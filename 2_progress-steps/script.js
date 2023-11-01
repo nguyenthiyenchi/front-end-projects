@@ -25,11 +25,14 @@ function update()   {
     circles.forEach((circle, idx) => {
         if (idx < currentActive) {
             circle.classList.add('active');
+            circle.classList.remove('non-active');
         }
         else    {
             circle.classList.remove('active');
+            circle.classList.add('non-active');
         }
     });
+
 
     const actives = document.querySelectorAll('.active');
 

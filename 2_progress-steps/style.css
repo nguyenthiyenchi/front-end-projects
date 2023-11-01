@@ -60,7 +60,7 @@ body{
 
 .circle{
     background-color: #d6cadd;
-    color: #4e2a84;
+    /* color: #4e2a84; */
     border-radius: 50%;
     height: 80px;
     width: 80px;
@@ -72,9 +72,39 @@ body{
     transition: 0.4s ease;
 }
 
-circle.active{
+.circle.active{
     border-color: var(--line-border-fill);
+    background-color: var(--line-border-fill);
 }
+
+.none-active .face{
+    font-size: 40px;
+    color: #4e2a84;
+    display: flex;
+}
+.none-active .active-face{
+    display: none;
+}
+.active .active-face{
+    color: #4e2a84;
+    display: flex;
+}
+.active .face{
+    display: none;
+}
+
+/* .active-face{
+    display: none;
+}
+
+.circle.active.face{
+    display: none;
+}
+
+.circle.active.active-face{
+    display: flex;
+    font-size: 30px;
+} */
 
 .btn{
     background-color: var(--line-border-fill);
