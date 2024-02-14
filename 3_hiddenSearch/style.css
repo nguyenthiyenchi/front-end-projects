@@ -16,20 +16,26 @@ body{
 }
 
 .search{
-    background-color: #cfa3f7;
+    background-color: #fff;
     position: relative;
     height: 60px;
     margin: 5px;
+    border-radius: 50%;
 }
 
 .search .input{
-    background-color: #cfa3f7;
+    background-color: #fff;
     border: 0;
     font-size: 20px;
     padding: 15px;
     height: 60px;
     width: 60px;
-    transition: width 0.3s ease;
+    transition: width 0.1s ease;
+    border-radius: 10px;
+}
+
+.search .input::placeholder{
+    color: transparent;
 }
 
 .btn{
@@ -44,7 +50,7 @@ body{
     height: 60px;
     width: 60px;
     border-radius: 50%;
-    transition: transform 0.3s ease;
+    transition: transform 0.1s ease;
 }
 
 .btn:focus, 
@@ -53,10 +59,20 @@ input:focus{
     outline: none;
 }
 
+.search.active{    
+    border-radius: 10px;
+}
+
 .search.active .input{
     width: 400px;
+    border-radius: 10px;
+}
+
+.search.active .input::placeholder{
+    color: #441370;
 }
 
 .search.active .btn{
     transform: translateX(400px);
+    border-radius: 10px;
 }

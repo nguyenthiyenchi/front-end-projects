@@ -6,3 +6,9 @@ btn.addEventListener('click', () => {
     search.classList.toggle('active');
     input.focus();
 });
+
+document.addEventListener('click', (event) => {
+    if (!search.contains(event.target)) {
+        search.classList.remove('active');
+    }
+});
