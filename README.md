@@ -9,6 +9,7 @@ I undertake these projects because I want to further enhance my skills to become
 - [Progress Steps](#progress-steps)
 - [Hidden Search](#hidden-search)
 - [Note App](#note-app)
+- [Github Profile](#github-profile)
 
 ## Expanding Cards
 1. Date: Friday, October 20, 2023
@@ -29,3 +30,7 @@ I undertake these projects because I want to further enhance my skills to become
 1. Date: Wednesday, February 14, 2024
 2. Project Demo:
 ![...](https:)
+
+## Github Profile
+1. Date: 
+2. Project Demo: 
