@@ -8,7 +8,7 @@ function createProfileCard(user)    {
     const userID = user.name || user.login;
     const userBio = user.bio ? `<p>${user.bio}</p>` : '';    
     const cardHTML = `
-    <div class="card">
+    <div class="profile-card">
         <div>
             <img src="${user.avatar_url}" alt="${user.name}" class="avatar">
         </div>
@@ -28,7 +28,7 @@ function createProfileCard(user)    {
 
 function createErrorCard(msg) {
     const cardHTML = `
-    <div class="card">
+    <div class="profile-card">
         <h2>${msg}</h2>
     </div>`;
     card.innerHTML = cardHTML;
