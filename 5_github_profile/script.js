@@ -1,4 +1,4 @@
-const APIURL = 'https://api.github.com/users/'
+const APIURL = 'https://api.github.com/users/';
 
 const card = document.getElementById("card");
 const form = document.getElementById("profile-input");
@@ -8,7 +8,10 @@ function createProfileCard(user)    {
     const userID = user.name || user.login;
     const userBio = user.bio ? `<p>${user.bio}</p>` : '';    
     const cardHTML = `
-    <div class="profile-card">
+    <div class="profile-card">    
+        <div class="cat-frame">
+            <div class="avatar"></div>
+        </div>
         <div>
             <img src="${user.avatar_url}" alt="${user.name}" class="avatar">
         </div>
@@ -16,9 +19,9 @@ function createProfileCard(user)    {
             <h2>${userID}</h2>
             <p>${userBio}</p>
             <ul>
-                <li>${user.followers} <strong>followers</strong> </li>
-                <li>${user.following} <strong>following</strong> </li>
-                <li>${user.public_repos} <strong>repositories</strong> </li>
+                <li>${user.followers}<strong>followers</strong></li>
+                <li>${user.following}<strong>following</strong></li>
+                <li>${user.public_repos}<strong>repositories</strong></li>
             </ul>
             <div id="repo"></div>
         </div>
