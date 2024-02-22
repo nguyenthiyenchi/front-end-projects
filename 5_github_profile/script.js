@@ -1,6 +1,6 @@
 const APIURL = 'https://api.github.com/users/';
 
-const card = document.getElementById("card");
+let card = document.getElementById("card");
 const form = document.getElementById("profile-input");
 const search = document.getElementById("profile-search");
 
@@ -8,7 +8,7 @@ function createProfileCard(user)    {
     const userID = user.name || user.login;
     const userBio = user.bio ? `<p>${user.bio}</p>` : '';    
     const cardHTML = `
-    <div class="profile-card">    
+    <div class="profile-card" id="profile-card">    
         <div class="cat-frame">
             <div class="avatar"></div>
         </div>
@@ -27,6 +27,9 @@ function createProfileCard(user)    {
         </div>
     </div>`;
     card.innerHTML = cardHTML;
+    const imgHTML = `
+        <img id="wait" src="wait.gif" alt="Wait to input">
+    `;
 }
 
 function createErrorCard(msg) {
@@ -77,5 +80,20 @@ form.addEventListener("submit", (e) => {
     if (user)   {
         getUser(user);
         search.value = "";
+        checkInput(user);
     }
 });
+
+function checkInput(user)   {
+    search.addEventListener("input", (e) => {
+        const val = e.target.value.trim();
+        if (val.length > 2) {
+            card.innerHTML = `<img id="wait" src="wait.gif" alt="Wait to input">`;
+        }
+        else {
+            getUser(user);
+        }
+    });
+}
+
+
