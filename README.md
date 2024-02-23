@@ -10,7 +10,7 @@ I undertake these projects because I want to further enhance my skills to become
 - [Expanding Cards](https://github.com/nguyenthiyenchi/50-projects-50-days/blob/main/1_expanding_cards/readme.md)
 - [Progress Steps](#progress-steps)
 - [Hidden Search](#hidden-search)
-- [Note App](#note-app)
+- [Note App](https://github.com/nguyenthiyenchi/50-projects-50-days/blob/main/4_note_app/readme.md)
 - [Github Profile](https://github.com/nguyenthiyenchi/50-projects-50-days/blob/main/5_github_profile/readme.md)
 
 ## Progress Steps

@@ -27,9 +27,6 @@ function createProfileCard(user)    {
         </div>
     </div>`;
     card.innerHTML = cardHTML;
-    const imgHTML = `
-        <img id="wait" src="wait.gif" alt="Wait to input">
-    `;
 }
 
 function createErrorCard(msg) {
