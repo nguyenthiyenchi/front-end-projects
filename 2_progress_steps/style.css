@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Niramit:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
 :root{
     --line-border-fill: #6a0dad;
     --line-border-empty: #9370db;
@@ -11,7 +10,7 @@
 
 body{
     background-color: #301934;
-    font-family: 'Poppins';
+    font-family: "Niramit", sans-serif;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -112,7 +111,7 @@ body{
     border: 0;
     border-radius: 6px;
     cursor: pointer;
-    font-family: Poppins;
+    font-family: "Niramit", sans-serif;
     padding: 10px 40px;
     margin: 5px 20px 5px 20px;
     font-size: 30px;
