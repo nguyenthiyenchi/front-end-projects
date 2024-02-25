@@ -15,7 +15,7 @@ body{
 }
 
 .feedback-container{
-  background-color: #e5cffd;
+  background-color: #ecdbfc;
   box-shadow: 0 0 15px rgb(229, 207, 253, 0.3);
   border-radius: 5px;
   font-size: 90%;
@@ -28,25 +28,33 @@ body{
   max-width: 650px;
 }
 
-.feedback-container strong{
-  line-height: 30px;
+.feedback-container p{
+  line-height: 10px;
   font-size: 18px;
+  font-weight: 600;
 }
 
 .feedback-ratings{
+  justify-content: space-between;
   display: flex;
-  margin: 20px 0;
+  margin: 10px 0;
+  width: 550px;
 }
 
 .rating{
+  background-color: #f5ebfd;
   flex: 1;
   cursor: pointer;
-  padding: 5px 30px;
-  margin: 5px 8px;
+  padding: 8px 0;
+  width: 100px;
+  margin: 2px 5px;
+  border: 2px solid #ba97db;
+  border-radius: 2px;
 }
 
 .rating:hover,
 .rating.active{
+  background-color: #ecdbfc;
   border-radius: 4px;
   box-shadow: 0 0 15px rgb(186, 151, 219, 0.9);
 }
@@ -68,8 +76,33 @@ body{
   color: #5b0888;
 }
 
+.reasons{
+  background-color: transparent;
+  width: 540px;
+  margin: 10px 0;
+}
+
+.reasons p{
+  font-size: 15px;
+}
+
+.reasons textarea{
+  background-color: #f5ebfd;
+  width: 100%;
+  border-radius: 5px;
+  padding: 5px;
+  resize: none;
+  border: 2.5px solid #ba97db;
+  outline: 0;
+}
+
+.reasons textarea:hover{
+  box-shadow: 0 0 10px rgb(186, 151, 219, 0.9);
+}
+
 .btn{
   background-color: #5b0888;
+  font-weight: 800;
   color: #f0e3fe;
   border: 0;
   border-radius: 5px;
