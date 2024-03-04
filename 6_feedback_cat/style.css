@@ -126,6 +126,18 @@ body{
   transform: scale(0.95);
 }
 
+.responded-icon{
+  font-size: 36px;
+}
+
+.response{
+  font-size: 22px;
+}
+
+.response2{
+  font-size: 16px;
+}
+
 /* #5B0888
 #713ABE
 #9D76C1
