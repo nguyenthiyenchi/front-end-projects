@@ -4,14 +4,8 @@ const sendBtn = document.querySelector("#send");
 const panel = document.querySelector("#feedback");
 
 let selectedRating = "Okay";
-let respondedRating = null;
+let selectedIcon = null;
 let respondedIcon = "😺";
-
-function removeActive() {
-    for (let i = 0; i < ratings.length; i++)    {
-        ratings[i].classList.remove("active");
-    }
-}
 
 ratings.forEach(rating => {
     rating.addEventListener("click", function() {
@@ -24,24 +18,25 @@ ratings.forEach(rating => {
 
 sendBtn.addEventListener('click', (e) => {
     if (selectedRating == "Terrible")   {
-        respondedRating = "I'm sorry to hear that. I'll do my best to fix or improve the situation."
+        selectedIcon = "I'm sorry to hear that. I'll do my best to fix or improve the situation."
     }
     if (selectedRating == "Bad")    {
-        respondedRating = " I understand. I'll try my best to fix or improve things for you."
+        selectedIcon = " I understand. I'll try my best to fix or improve things for you."
     }
     if (selectedRating == "Okay")   {
-        respondedRating = "Noted. I'll make an effort to enhance your experience.";
+        selectedIcon = "Noted. I'll make an effort to enhance your experience.";
     }
     if (selectedRating == "Good")   {
-        respondedRating = "Great to hear! I'll keep up the good work and strive for even better."
+        selectedIcon = "Great to hear! I'll keep up the good work and strive for even better."
     }
     if (selectedRating == "Amazing") {
-        respondedRating = "That's fantastic! I'll continue to provide excellent service and support.";
+        selectedIcon = "That's fantastic! I'll continue to provide excellent service and support.";
     }
     panel.innerHTML = `
         <div class = "responded-icon">${respondedIcon}</div>
         <strong class="response">Thank You!</strong>
-        <strong class="response2">Feedback: ${selectedRating}</strong>
-        <div>${respondedRating}</div>
+        <strong class="response">Feedback: <span style="color: #7946c1">${selectedRating}</span></strong>
+        <br>
+        <div style="font-size: 18px; width: 75%;">${selectedIcon}</div>
     `
 })
