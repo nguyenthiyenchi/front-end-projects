@@ -4,8 +4,8 @@ const hour = document.querySelector(".hour"),
     minute = document.querySelector(".minute"),
     second = document.querySelector(".second");
 
-const time = document.querySelector(".time"),
-    date = document.querySelector(".date");
+const theTime = document.querySelector(".time"),
+    theDate = document.querySelector(".date");
 
 const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
     months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
@@ -14,12 +14,10 @@ modeToggle.addEventListener("click", (e) => {
     const html = document.querySelector("html");
     if (html.classList.contains("light"))    {
         html.classList.remove("light");
-        html.classList.add("dark");
         e.target.innerHTML = "Light Mode";
     }
     else {
         html.classList.add("light");
-        html.classList.remove("dark");
         e.target.innerHTML = "Dark Mode";
     }
 });
@@ -30,16 +28,16 @@ const scale = (num, in_min, in_max, out_min, out_max) => {
 }
 
 function setTimer() {
-    const time = new Date();
+    const timer = new Date();
 
-    const month = time.getMonth(),
-        day = time.getDay(),
-        date = time.getDate();
+    const month = timer.getMonth(),
+        day = timer.getDay(),
+        date = timer.getDate();
 
-    const hours = time.getHours(),
+    const hours = timer.getHours(),
         hoursClock = hours >= 13 ? hours % 12 : hours,
-        minutesClock = time.getMinutes(),
-        secondsClock = time.getSeconds();
+        minutesClock = timer.getMinutes(),
+        secondsClock = timer.getSeconds();
     
     const ampm = hours >= 12 ? "PM" : "AM";
 
@@ -47,8 +45,8 @@ function setTimer() {
     minute.style.transform = `translate(-50%, -100%) rotate(${scale(minutesClock, 0, 60, 0, 360)}deg)`;
     second.style.transform = `translate(-50%, -100%) rotate(${scale(secondsClock, 0, 60, 0, 360)}deg)`;
 
-    time.innerHTML = `${hoursClock}:${minutesClock < 10 ? `0${minutesClock}` : minutesClock} ${ampm}`;
-    date.innerHTML = `${days[day]}, ${months[month]} <span class="circle">${date}</span>`;
+    theTime.innerHTML = `${hoursClock}:${minutesClock < 10 ? `0${minutesClock}` : minutesClock} ${ampm}`;
+    theDate.innerHTML = `${days[day]}, ${months[month]} <span class="circle">${date}</span>`;
 }
 
 setTimer();

@@ -110,12 +110,13 @@ body{
 }
 
 .time{
+    color: var(--primary-color);
     font-size: 60px;
 }
 
 .date{
-    color: #ccbed7;
-    font-size: 14px;
+    color: #bba6d7;
+    font-size: 18px;
     letter-spacing: 0.3px;
     text-transform: uppercase;
 }
