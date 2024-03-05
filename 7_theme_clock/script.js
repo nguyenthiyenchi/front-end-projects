@@ -39,7 +39,7 @@ function setTimer() {
     const hours = time.getHours(),
         hoursClock = hours >= 13 ? hours % 12 : hours,
         minutesClock = time.getMinutes(),
-        secondsClock = time.getSeconds;
+        secondsClock = time.getSeconds();
     
     const ampm = hours >= 12 ? "PM" : "AM";
 

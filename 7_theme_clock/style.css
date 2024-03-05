@@ -83,11 +83,11 @@ body{
 .clock.second{
     transform: translate(-50%, -100%) rotate(0deg);
     height: 100px;
-    background-color: #713abe;
+    background-color: #a06de8;
 }
 
 .center-point{
-    background-color: #713abe;
+    background-color: #a06de8;
     width: 10px;
     height: 10px;
     position: absolute;
