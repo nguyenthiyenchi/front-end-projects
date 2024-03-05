@@ -45,10 +45,6 @@ body{
     top: 100px;
 }
 
-mode.light{}
-
-mode.dark{}
-
 .mode:focus{
     outline: none;
 }

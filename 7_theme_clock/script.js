@@ -23,3 +23,19 @@ modeToggle.addEventListener("click", (e) => {
         e.target.innerHTML = "Dark Mode";
     }
 });
+
+function setTimer() {
+    const time = new Date();
+
+    const month = time.getMonth(),
+        day = time.getDay(),
+        date = time.getDate();
+
+    const hours = time.getHours(),
+        hoursClock = hours >= 13 ? hours % 12 : hours,
+        minutes = time.getMinutes(),
+        second = time.getSeconds;
+    
+    const ampm = hours >= 12 ? "PM" : "AM";
+
+}
