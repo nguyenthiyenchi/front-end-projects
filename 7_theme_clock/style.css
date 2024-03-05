@@ -11,6 +11,7 @@
 
 html{
     transition: all 0.5s ease-in;
+    background-color: var(--secondary-color);
 }
 
 html.light{
@@ -19,12 +20,11 @@ html.light{
 }
 
 html.light{
-    background-color: #e5cff7;
+    background-color: var(--secondary-color);
     color: var(--primary-color);
 }
 
 body{
-    background-color: #e5cff7;
     font-family: 'Poppins', sans-serif;
     display: flex;
     align-items: center;
@@ -44,6 +44,10 @@ body{
     position: absolute;
     top: 100px;
 }
+
+mode.light{}
+
+mode.dark{}
 
 .mode:focus{
     outline: none;

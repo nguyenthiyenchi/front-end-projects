@@ -4,7 +4,6 @@ const hour = document.querySelector(".hour"),
     minute = document.querySelector(".minute"),
     second = document.querySelector(".second");
 
-
 const time = document.querySelector('.time'),
     date = document.querySelector('.date');
 
@@ -15,10 +14,12 @@ modeToggle.addEventListener("click", (e) => {
     const html = document.querySelector("html");
     if (html.classList.contains("light"))    {
         html.classList.remove("light");
+        html.classList.add("dark");
         e.target.innerHTML = "Light Mode";
     }
     else {
         html.classList.add("light");
+        html.classList.remove("dark");
         e.target.innerHTML = "Dark Mode";
     }
 });
