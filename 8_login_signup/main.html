@@ -3,11 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>    <title>Form</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>    
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <link rel="stylesheet"  href="style.css">
+    <script src="script.js" defer></script>
+    <title>Form</title>
 </head>
 <body>
     <div class="form-container">
-        <div class="login-container">
+        <form class="login-container">
             <div class="form login">
                 <div class="form-header">Log In</div>
                 <div class="box">
@@ -17,13 +21,13 @@
                 <div class="box">
                     <input type="text" placeholder="Your Password">
                     <i class='bx bxs-lock-alt' ></i>
-                    <!-- <i class='bx bxs-lock-open-alt' ></i> -->
+                    <i class="uil uil-eye-slash pw-hid"></i>
                 </div>
             </div>
-            <div class="forget">Forgot the password?</div>
+            <button class="forget">Forgot the password?</button>
             <button>LOG IN</button>
-        </div>
-        <div class="sign-up">
+        </form>
+        <form class="signup-container">
             <div class="form signup">
                 <div class="form-header">Sign In</div>
                 <div class="box">
@@ -37,21 +41,25 @@
                 <div class="box">
                     <input type="text" placeholder="Create Password">
                     <i class='bx bxs-lock-alt' ></i>
-                    <!-- <i class='bx bxs-lock-open-alt' ></i> -->
+                    <i class="uil uil-eye-slash pw-hid"></i>
                 </div>
                 <div class="box">
                     <input type="text" placeholder="Confirm Password">
                     <i class='bx bxs-lock-alt' ></i>
-                    <!-- <i class='bx bxs-lock-open-alt' ></i> -->
+                    <i class="uil uil-lock-alt password"></i>
                 </div>
                 <button>SIGN UP</button>
             </div>
-        </div>
+        </form>
         <div class="login-home">
             <h3>Welcome Back!</h3>
+            <p>Already have an account?</p>
+            <button>LOG IN</button>
         </div>
         <div class="login-home">
-            <h3>Hello Friend!</h3>
+            <h3>Hello, Friend!</h3>
+            <p>Don't have an account</p>
+            <button>SIGN UP</button>
         </div>
     </div>
 </body>
