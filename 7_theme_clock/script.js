@@ -14,11 +14,11 @@ modeToggle.addEventListener("click", (e) => {
     const html = document.querySelector("html");
     if (html.classList.contains("light"))    {
         html.classList.remove("light");
-        e.target.innerHTML = "Light Mode";
+        e.target.innerHTML = "Dark Mode";
     }
     else {
         html.classList.add("light");
-        e.target.innerHTML = "Dark Mode";
+        e.target.innerHTML = "Light Mode";
     }
 });
 
