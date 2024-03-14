@@ -5,61 +5,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>    
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet"  href="style.css">
     <script src="script.js" defer></script>
     <title>Form</title>
 </head>
 <body>
     <div class="form-container">
-        <form class="login-container">
+        <div class="login-container">
             <div class="form login">
                 <div class="form-header">Log In</div>
                 <div class="box">
-                    <input type="text" placeholder="Your E-mail">
-                    <i class='bx bxs-user-circle' ></i>
+                    <input type="email" placeholder="Your E-mail" required>
+                    <i class='bx bxs-user-circle email' ></i>
                 </div>
                 <div class="box">
-                    <input type="text" placeholder="Your Password">
-                    <i class='bx bxs-lock-alt' ></i>
+                    <input type="password" placeholder="Your Password" required>
+                    <i class='bx bxs-lock-alt password'></i>
                     <i class="uil uil-eye-slash pw-hid"></i>
                 </div>
+                <button class="forget">Forget your password?</button>
+                <button class="submit"><i class="fa-solid fa-paw"></i></button>
             </div>
-            <button class="forget">Forgot the password?</button>
-            <button>LOG IN</button>
-        </form>
-        <form class="signup-container">
+        </div>
+        
+        <div class="signup-container">
             <div class="form signup">
                 <div class="form-header">Sign In</div>
                 <div class="box">
                     <input type="text" placeholder="Your Name">
-                    <i class='bx bxs-user'></i>
+                    <i class='bx bxs-user user'></i>
                 </div>                   
                 <div class="box">
-                    <input type="text" placeholder="Your E-mail">
-                    <i class='bx bxs-envelope'></i>
+                    <input type="email" placeholder="Your E-mail">
+                    <i class='bx bxs-envelope email'></i>
                 </div> 
                 <div class="box">
-                    <input type="text" placeholder="Create Password">
-                    <i class='bx bxs-lock-alt' ></i>
+                    <input type="password" placeholder="Create Password" required>
+                    <i class='bx bxs-lock-alt password' ></i>
                     <i class="uil uil-eye-slash pw-hid"></i>
                 </div>
                 <div class="box">
-                    <input type="text" placeholder="Confirm Password">
-                    <i class='bx bxs-lock-alt' ></i>
-                    <i class="uil uil-lock-alt password"></i>
+                    <input type="password" placeholder="Confirm Password" required>
+                    <i class='bx bxs-lock-alt password'></i>
+                    <i class="uil uil-eye-slash pw-hid"></i>
                 </div>
-                <button>SIGN UP</button>
+                <button class="submit"><i class="fa-solid fa-paw"></i></button>
             </div>
-        </form>
+        </div>
         <div class="login-home">
             <h3>Welcome Back!</h3>
             <p>Already have an account?</p>
-            <button>LOG IN</button>
+            <button class="submit hidden"><i class="fa-solid fa-paw"></i></button>
         </div>
         <div class="login-home">
             <h3>Hello, Friend!</h3>
             <p>Don't have an account</p>
-            <button>SIGN UP</button>
+            <button class="submit hidden"><i class="fa-solid fa-paw"></i></button>
         </div>
     </div>
 </body>
