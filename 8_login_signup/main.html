@@ -12,9 +12,10 @@
 </head>
 <body>
     <div class="form-container">
-        <div class="login-container">
-            <div class="form login">
-                <div class="form-header">Log In</div>
+        <!-- login -->
+        <div class="login form-wrapper">
+            <form>
+                <h3>Log In</h3>
                 <div class="box">
                     <input type="email" placeholder="Your E-mail" required>
                     <i class='bx bxs-user-circle email' ></i>
@@ -26,12 +27,12 @@
                 </div>
                 <button class="forget">Forget your password?</button>
                 <button class="submit"><i class="fa-solid fa-paw"></i></button>
-            </div>
+            </form>
         </div>
-        
-        <div class="signup-container">
-            <div class="form signup">
-                <div class="form-header">Sign In</div>
+        <!-- signup  -->
+        <div class="signup form-wrapper">
+            <form>
+                <h3>Sign Up</h3>
                 <div class="box">
                     <input type="text" placeholder="Your Name">
                     <i class='bx bxs-user user'></i>
@@ -51,15 +52,17 @@
                     <i class="uil uil-eye-slash pw-hid"></i>
                 </div>
                 <button class="submit"><i class="fa-solid fa-paw"></i></button>
-            </div>
+            </form>
         </div>
+
         <div class="login-home">
-            <h3>Welcome Back!</h3>
+            <h1>Welcome Back!</h1>
             <p>Already have an account?</p>
             <button class="submit hidden"><i class="fa-solid fa-paw"></i></button>
         </div>
-        <div class="login-home">
-            <h3>Hello, Friend!</h3>
+
+        <div class="signup-home">
+            <h1>Hello, Friend!</h1>
             <p>Don't have an account</p>
             <button class="submit hidden"><i class="fa-solid fa-paw"></i></button>
         </div>
