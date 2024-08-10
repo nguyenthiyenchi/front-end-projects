@@ -3,7 +3,7 @@
     box-sizing: border-box;
 }
 body{
-    background-color: #d6cadd;
+    background-color: #21162e;
     font-family: "Poppins", sans-serif;
     display: flex;
     align-items: center;
@@ -44,11 +44,10 @@ body{
     opacity: 0;
 }
 .panel.active .text{
-    background-color: rgba(128, 128, 128, 0.6);
+    background-color: rgba(50, 33, 70, 0.6);
     border-radius: 20px;
     opacity: 1;
     transition: ease-in 0.5s;
-    /* opacity: 1; */
 }
 .panel.active{
     flex: 5;
