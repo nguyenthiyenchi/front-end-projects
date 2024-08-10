@@ -1,7 +1,7 @@
-## Theme Clock
+## Login/Signup
 1. **Project Demo:**
 
-![Theme Clock](./resources/demo.gif)
+![Login/Signup](./resources/demo.gif)
 
 2. **Description:** 
     - 

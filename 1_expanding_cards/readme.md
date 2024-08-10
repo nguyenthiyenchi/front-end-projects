@@ -3,7 +3,8 @@
 
 ![Expanding Cards](./resources/demo.gif)
 
-2. **Desccription:** Developed an interactive card interface featuring five distinct cat images. 
+2. **Desccription:** 
+    - Developed an interactive card interface featuring five distinct cat images. 
     - When a user hovers over a card, the cat's name appears vertically aligned.
     - Upon clicking, the selected card expands to reveal the full image, enhancing visual engagement.
 

@@ -1,9 +1,10 @@
 ## Background
 1. **Project Demo:**
 
-![Progressing Steps](./resources/demo.gif)
+![Background](./resources/demo.gif)
 
-2. **Description:** Developed a background featuring a dynamic design with 10 cat GIFs that drift upwards and spin at varying time delays and durations.
+2. **Description:** 
+    - Developed a background featuring a dynamic design with 10 cat GIFs that drift upwards and spin at varying time delays and durations.
     - A central button triggers the appearance of an input bar when clicked, adding an interactive element to the design.
     
 3. **Purpose:** 

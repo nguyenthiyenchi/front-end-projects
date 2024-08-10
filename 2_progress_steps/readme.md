@@ -3,7 +3,8 @@
 
 ![Progressing Steps](./resources/demo.gif)
 
-2. **Description:** Created a multi-step progress indicator with four steps, each representing a different cat emotion.
+2. **Description:** 
+    - Created a multi-step progress indicator with four steps, each representing a different cat emotion.
     - The progress starts at step 1, where the "Previous" button is disabled. At step 4, the "Next" button is disabled.
     - Users navigate through the steps, with each step visually represented by a unique cat emoji.
 
