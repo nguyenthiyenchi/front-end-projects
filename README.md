@@ -4,7 +4,9 @@ Thanks for visiting my **Front-end Projects**.
 
 I undertake these projects because I want to further enhance my skills to become a Front-end Developer. If you have interest, then join and practice at [50 Projects in 50 Days](https://50projects50days.com/)
 
-## Table of Contents
+For each project, I include a short description and a live demo.
+
+## Projects
 - [Expanding Cards](https://github.com/nguyenthiyenchi/50-projects-50-days/blob/main/1_expanding_cards/readme.md)
 - [Progress Steps](https://github.com/nguyenthiyenchi/50-projects-50-days/blob/main/2_progress_steps/readme.md)
 - [Hidden Search](https://github.com/nguyenthiyenchi/50-projects-50-days/blob/main/3_hidden_search/readme.md)
