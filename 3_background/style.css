@@ -4,7 +4,6 @@
 }
 
 body{
-    /* background: linear-gradient(90deg, rgba(68,19,112,1) 0%, rgba(86,44,142,1) 50%, rgba(68,19,112,1) 100%); */
     background-color: #21162e;
     font-family: "Poppins", sans-serif;
     display: flex;
@@ -17,6 +16,7 @@ body{
 
 .search{
     background-color: rgba(68, 19, 112, 0.3);
+    color: #debefa;
     position: relative;
     height: 60px;
     margin: 5px;
@@ -25,6 +25,7 @@ body{
 
 .search .input{
     background-color: rgba(68, 19, 112, 0.3);
+    color: #debefa;
     border: 0;
     font-size: 20px;
     padding: 15px;
@@ -36,7 +37,7 @@ body{
 }
 
 .search .input::placeholder{
-    color: transparent;
+    color: #debefa;
 }
 
 .btn{
@@ -56,14 +57,17 @@ body{
 input:focus{
     border-color: 2px solid #7c45ae;
     outline: none;
+    color: #debefa;
 }
 
 .search.active{    
+    color: #debefa;
     border-radius: 10px;
 }
 
 .search.active .input{
     width: 400px;
+    color: #debefa;
     border-radius: 10px;
 }
 
