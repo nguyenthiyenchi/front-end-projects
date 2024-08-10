@@ -13,6 +13,6 @@ For each project, I include a short description and a live demo.
 - [Note App](https://github.com/nguyenthiyenchi/50-projects-50-days/blob/main/4_note_app/readme.md)
 - [Github Profile](https://github.com/nguyenthiyenchi/50-projects-50-days/blob/main/5_github_profile/readme.md)
 - [Feedback Cat](https://github.com/nguyenthiyenchi/50-projects-50-days/blob/main/6_feedback_cat/readme.md)
-- [Theme Clock](https://github.com/nguyenthiyenchi/50-projects-50-days/blob/main/6_feedback_cat/readme.md)
+- [Theme Clock](https://github.com/nguyenthiyenchi/50-projects-50-days/blob/main/7_theme_clock/readme.md)
 - [Login/Signup](https://github.com/nguyenthiyenchi/50-projects-50-days/blob/main/8_login_signup/readme.md)
 
