@@ -85,7 +85,7 @@ function checkInput(user)   {
     search.addEventListener("input", (e) => {
         const val = e.target.value.trim();
         if (val.length > 2) {
-            card.innerHTML = `<img id="wait" src="wait.gif" alt="Wait to input">`;
+            card.innerHTML = `<img id="wait" src="./resources/wait.gif" alt="Wait to input">`;
         }
         else {
             getUser(user);
